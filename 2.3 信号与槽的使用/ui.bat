@@ -1,0 +1,1 @@
+pyuic5 -o '.\Study\2.3 信号与槽的使用\dialog.py' '.\Study\2.3 信号与槽的使用\QtApp\dialog.ui'

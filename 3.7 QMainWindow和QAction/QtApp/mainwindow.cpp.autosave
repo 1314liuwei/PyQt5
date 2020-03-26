@@ -1,0 +1,35 @@
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
+
+MainWindow::MainWindow(QWidget *parent)
+    : QMainWindow(parent)
+    , ui(new Ui::MainWindow)
+{
+    ui->setupUi(this);
+}
+
+MainWindow::~MainWindow()
+{
+    delete ui;
+}
+
+
+void MainWindow::on_action_Italic_changed()
+{
+    
+}
+
+void MainWindow::on_action_Italic_triggered(bool checked)
+{
+    
+}
+
+void MainWindow::on_action_Bold_triggered(bool checked)
+{
+    
+}
+
+void MainWindow::on_action_UnderLine_triggered(bool checked)
+{
+    
+}

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1045</width>
+    <height>533</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QSplitter" name="splitter_2">
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="midLineWidth">
+       <number>0</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="handleWidth">
+       <number>5</number>
+      </property>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="5" column="0">
+         <widget class="QPushButton" name="pushButton_autoRowHeight">
+          <property name="text">
+           <string>自动调节行高</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="pushButton_setRowNum">
+          <property name="text">
+           <string>设置行数</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QPushButton" name="pushButton_deleteRow">
+          <property name="text">
+           <string>删除当前行</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QRadioButton" name="radioButton_row">
+          <property name="text">
+           <string>行选择</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QPushButton" name="pushButton_addRow">
+          <property name="text">
+           <string>添加行</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="QRadioButton" name="radioButton_col">
+          <property name="text">
+           <string>单元格选择</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QPushButton" name="pushButton_insertRow">
+          <property name="text">
+           <string>插入行</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButton_setTableHead">
+          <property name="text">
+           <string>设置表头</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QCheckBox" name="checkBox_setColor">
+          <property name="text">
+           <string>间隔行底色</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QCheckBox" name="checkBox_setColHead">
+          <property name="text">
+           <string>显示列表头</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSpinBox" name="spinBox"/>
+        </item>
+        <item row="6" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButton_readTable">
+          <property name="text">
+           <string>读取表格内容到列表</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButton_initTableData">
+          <property name="text">
+           <string>初始化表格数据</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QPushButton" name="pushButton_clearTableConten">
+          <property name="text">
+           <string>清除表格内容</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QCheckBox" name="checkBox_editAbled">
+          <property name="text">
+           <string>表格可编辑</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QCheckBox" name="checkBox_diaplayRowHead">
+          <property name="text">
+           <string>显示行表头</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QPushButton" name="pushButton_autoColWidth">
+          <property name="text">
+           <string>自动调节列宽</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QSplitter" name="splitter">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <property name="rowCount">
+         <number>5</number>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>110</number>
+        </attribute>
+        <row/>
+        <row/>
+        <row/>
+        <row/>
+        <row/>
+        <column>
+         <property name="text">
+          <string>列1</string>
+         </property>
+         <property name="textAlignment">
+          <set>AlignCenter</set>
+         </property>
+         <property name="foreground">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>列2</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>列3</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>列4</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>列5</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>列6</string>
+         </property>
+        </column>
+        <item row="0" column="0">
+         <property name="text">
+          <string>（1，1）</string>
+         </property>
+        </item>
+        <item row="0" column="1">
+         <property name="text">
+          <string>（1，2）</string>
+         </property>
+         <property name="textAlignment">
+          <set>AlignLeading|AlignVCenter</set>
+         </property>
+         <property name="icon">
+          <iconset resource="images.qrc">
+           <normaloff>:/icon/images/boy.ico</normaloff>:/icon/images/boy.ico</iconset>
+         </property>
+        </item>
+        <item row="1" column="0">
+         <property name="text">
+          <string>（2，1）</string>
+         </property>
+        </item>
+        <item row="1" column="1">
+         <property name="text">
+          <string>（2，2）</string>
+         </property>
+         <property name="icon">
+          <iconset resource="images.qrc">
+           <normaloff>:/icon/images/girl.ico</normaloff>:/icon/images/girl.ico</iconset>
+         </property>
+        </item>
+        <item row="2" column="0">
+         <property name="text">
+          <string>（3，1）</string>
+         </property>
+        </item>
+        <item row="3" column="0">
+         <property name="text">
+          <string>（4，1）</string>
+         </property>
+        </item>
+        <item row="4" column="0">
+         <property name="text">
+          <string>（5，1）</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPlainTextEdit" name="plainTextEdit"/>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
